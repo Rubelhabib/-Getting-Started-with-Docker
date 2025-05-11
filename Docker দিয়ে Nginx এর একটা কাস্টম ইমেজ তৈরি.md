@@ -4,5 +4,7 @@
 ```bash
 docker build . -t class02-nginx
 <br/>
-images/Screenshot from 2025-05-10 17-20-42.png
+-Getting-Started-with-Docker/images
+/Screenshot from 2025-05-10 17-20-42.png
+
 </details> ```
