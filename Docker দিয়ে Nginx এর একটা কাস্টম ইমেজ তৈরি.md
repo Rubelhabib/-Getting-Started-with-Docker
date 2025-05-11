@@ -51,6 +51,7 @@ docker run -d --name=class2-nginx-container -p 80:80 class2-nginx
 
 -p 80:80 মানে হোস্টের 80 পোর্টটি কনটেইনারের 80 পোর্টের সাথে ম্যাপ করে, অর্থাৎ তুমি ব্রাউজারে localhost বা server-ip এ গেলেই তোমার index.html দেখা যাবে।
 
+![Picture](images/output.png)
 
 
 
