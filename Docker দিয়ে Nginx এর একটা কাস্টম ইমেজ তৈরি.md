@@ -1,7 +1,5 @@
 __ধাপ ১: vim Dockerfile__
 
-</br>
-
  ```
 FROM nginx
 COPY index.html /usr/share/nginx/html
@@ -16,5 +14,18 @@ COPY index.html /usr/share/nginx/html — এই কমান্ডটি index.
 এতে ব্রাউজারে গিয়ে Nginx এর ডিফল্ট পেজ না দেখে তোমার দেওয়া index.html দেখা যাবে।
 
 ![Picture](/images/pic1.png)
+
+![Dockervimfile](/images/Dockervimfile.png)
+
+
+__ধাপ ১: vim index.html __
+
+![Index.html](images/index.html.png)
+
+```
+vim index.html
+```
+ব্যাখ্যা:
+এটি হলো HTML ফাইল যা ব্রাউজারে প্রদর্শিত হবে যখন কেউ তোমার কনটেইনারের সার্ভারে (মানে: localhost:80) যাবে।
 
 __ধাপ ১: vim Dockerfile__
