@@ -15,11 +15,12 @@ COPY index.html /usr/share/nginx/html — এই কমান্ডটি index.
 এর ডিফল্ট ওয়েবরুট /usr/share/nginx/html-এ কপি করে দিচ্ছে। 
 এতে ব্রাউজারে গিয়ে Nginx এর ডিফল্ট পেজ না দেখে তোমার দেওয়া index.html দেখা যাবে।
 
-![Index.html](images/index.html.png)
-
 ```
 vim index.html
 ```
+![Index.html](images/index.html.png)
+
+
 ব্যাখ্যা:
 এটি হলো HTML ফাইল যা ব্রাউজারে প্রদর্শিত হবে যখন কেউ তোমার কনটেইনারের সার্ভারে (মানে: localhost:80) যাবে।
 
