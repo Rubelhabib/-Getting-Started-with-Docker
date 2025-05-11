@@ -1,5 +1,6 @@
 <details>
 <summary> ধাপ ১: vim Dockerfile </summary>
+```bash
 FROM nginx
 COPY index.html /usr/share/nginx/html
   
