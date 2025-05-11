@@ -1,4 +1,4 @@
-### __ধাপ ১: vim Dockerfile__
+###  `rgb(9, 105, 218) __ধাপ ১: vim Dockerfile__
 
  ```
 FROM nginx
