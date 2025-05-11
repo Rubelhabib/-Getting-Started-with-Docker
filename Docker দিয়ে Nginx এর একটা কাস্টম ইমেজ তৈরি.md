@@ -1,5 +1,7 @@
 __ধাপ ১: vim Dockerfile__
 
+![Dockervimfile](/images/Dockervimfile.png)
+
  ```
 FROM nginx
 COPY index.html /usr/share/nginx/html
@@ -15,7 +17,7 @@ COPY index.html /usr/share/nginx/html — এই কমান্ডটি index.
 
 ![Picture](/images/pic1.png)
 
-![Dockervimfile](/images/Dockervimfile.png)
+
 
 
 __ধাপ ১: vim index.html __
