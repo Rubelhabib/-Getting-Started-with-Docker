@@ -52,6 +52,10 @@ docker run -d --name=class2-nginx-container -p 80:80 class2-nginx
 
 ![Picture](images/output.png)
 
+### ✅ ফলাফল:
+
+Docker দিয়ে একটি কাস্টম Nginx ওয়েব সার্ভার তৈরি করা হয়েছে, যেখানে  ### `"Hello from docker"` মেসেজটি ব্রাউজারে দেখা যাবে।    
+
 
 
 
