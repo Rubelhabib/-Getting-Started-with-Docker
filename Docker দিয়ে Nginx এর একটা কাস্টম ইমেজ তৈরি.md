@@ -4,7 +4,7 @@ __ধাপ ১: vim Dockerfile__
 FROM nginx
 COPY index.html /usr/share/nginx/html
 ```
-![Docker vim file](images/Dockervimfile.png)
+![Docker vim file](/images/Dockervimfile.png)
 
 ব্যাখ্যা:
 এখানে একটি Dockerfile তৈরি করা হয়েছে, যেখানে:
@@ -16,9 +16,6 @@ COPY index.html /usr/share/nginx/html — এই কমান্ডটি index.
 এতে ব্রাউজারে গিয়ে Nginx এর ডিফল্ট পেজ না দেখে তোমার দেওয়া index.html দেখা যাবে।
 
 ![Picture](/images/pic1.png)
-
-
-
 
 __ধাপ ১: vim index.html __
 
