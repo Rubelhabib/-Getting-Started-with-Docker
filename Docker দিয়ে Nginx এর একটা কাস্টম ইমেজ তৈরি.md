@@ -1,11 +1,12 @@
 __ধাপ ১: vim Dockerfile__
 
-![Dockervimfile](/images/Dockervimfile.png)
-
  ```
 FROM nginx
 COPY index.html /usr/share/nginx/html
 ```
+
+![vimfile](/images/Dockervimfile.png)
+
 ব্যাখ্যা:
 এখানে একটি Dockerfile তৈরি করা হয়েছে, যেখানে:
 
