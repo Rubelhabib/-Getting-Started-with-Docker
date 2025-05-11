@@ -5,7 +5,8 @@ FROM nginx
 COPY index.html /usr/share/nginx/html
 ```
 
-![vimfile](/images/Dockervimfile.png)
+![Docker vim file](images/Docker vim file.png)
+
 
 ব্যাখ্যা:
 এখানে একটি Dockerfile তৈরি করা হয়েছে, যেখানে:
