@@ -17,7 +17,7 @@ vim start-nginx.sh
 ```
 docker run -d -p 8083:80 --name=my-nginx -v /home/rubel/Nginx/nginx-data:/usr/share/nginx/html nginx
 ```
-**2️⃣ Create a Local Data Directory**
+👉**2️⃣ Create a Local Data Directory**
 ```
 mkdir nginx-data
 realpath nginx-data/
@@ -26,7 +26,7 @@ realpath nginx-data/
  - realpath gives the absolute path of the directory.
 </br>
 
-**3️⃣ Run the Docker Container (First Version)**
+👉**3️⃣ Run the Docker Container (First Version)**
 ```
 docker run -d --name=my-nginx -v /home/rubel/Nginx/nginx-data:/usr/share/nginx/html nginx
 ```
