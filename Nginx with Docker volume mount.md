@@ -34,7 +34,7 @@ docker run -d --name=my-nginx -v /home/rubel/Nginx/nginx-data:/usr/share/nginx/h
 
 </br>
 
-**4️⃣ Create HTML Content**
+👉**4️⃣ Create HTML Content**
 
 ```
 cd nginx-data/
@@ -45,7 +45,7 @@ cat index.html
 
 </br>
 
-**5️⃣ Update the Script to Expose a Port**
+👉**5️⃣ Update the Script to Expose a Port**
  - Update start-nginx.sh:
  
 ```
@@ -54,7 +54,8 @@ docker run -d -p 8083:80 --name=my-nginx -v /home/rubel/Nginx/nginx-data:/usr/sh
  - Maps container port 80 to host port 8083.
 
 </br>
-**6️⃣ Make the Script Executable and Run It**
+
+👉**6️⃣ Make the Script Executable and Run It**
 
 ```
 chmod +x start-nginx.sh
@@ -63,7 +64,8 @@ sudo ./start-nginx.sh
 - Starts the Nginx container with the proper volume and port.
   
 </br>
-**7️⃣ Test the Web Server**
+
+👉**7️⃣ Test the Web Server**
 
 ```
 curl localhost:8083
@@ -71,7 +73,8 @@ curl localhost:8083
  - Should return: Hello From Docker
 
 </br>
-**8️⃣ Update HTML and Retest**
+
+👉**8️⃣ Update HTML and Retest**
 
 ```
 vim index.html
