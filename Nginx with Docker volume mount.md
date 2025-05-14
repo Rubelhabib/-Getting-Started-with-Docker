@@ -33,6 +33,7 @@ docker run -d --name=my-nginx -v /home/rubel/Nginx/nginx-data:/usr/share/nginx/h
  - -v mounts the local directory to Nginx’s default HTML folder inside the container.
 
 </br>
+
 **4️⃣ Create HTML Content**
 
 ```
@@ -43,6 +44,7 @@ cat index.html
  - **Creates a simple web page to serve.**
 
 </br>
+
 **5️⃣ Update the Script to Expose a Port**
  - Update start-nginx.sh:
  
