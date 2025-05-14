@@ -85,6 +85,18 @@ curl localhost:8083
 ```
  - You'll now see the updated content in the browser or via curl.
 
+# ✅ Docker Nginx Volume Setup
+  👉**Summary**
+| Component         | Description                                                        |
+|-------------------|--------------------------------------------------------------------------|
+| **Nginx Docker** |Serves HTML content from mounted volume |
+| **Local Directory**  | /home/rubel/Nginx/nginx-data|
+| **Exposed Port**  | localhost:8083 maps to Nginx port 80 |
+| **index.html** | Dynamic — can be updated anytime locally |
+
+---
+
+
 
 
 
