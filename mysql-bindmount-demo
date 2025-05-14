@@ -1,7 +1,6 @@
 mysql-bindmount-demo/
 ├── mysql-data/                   # Local directory for MySQL data (created automatically)
 ├── start-mysql.sh                # Script to run MySQL container with bind mount
-├── README.md                     # Project documentation
 
 # Contents of start-mysql.sh
 #!/bin/bash
