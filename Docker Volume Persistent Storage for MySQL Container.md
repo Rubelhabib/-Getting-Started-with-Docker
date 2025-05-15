@@ -17,11 +17,9 @@ This project demonstrates how to run a MySQL container using a **Docker named vo
 ```
 docker volume create mysql-vol
 ```
-![Create Volume](docker-volume-images./Create-volume1.png)
-
 </br>
 
-**2. Create a Shell Script to Run MySQL with Volume**
+**2. Create a Shell Script to Run MySQL with Volume** </br>
  👉 Create a file called `start-mysql-vol.sh` with the following content:
 ```
 #!/bin/bash
@@ -30,6 +28,7 @@ docker run --name mysql-container-2 \
   -e MYSQL_ROOT_PASSWORD=12344 \
   -d mysql
 ```
+</br>
  👉 Then make it executable:
 ```
 chmod +x start-mysql-vol.sh
@@ -42,12 +41,13 @@ sudo ./start-mysql-vol.sh
 ```
 </br>
 
-**4. (Optional) Create a Test Database**
+**4. (Optional) Create a Test Database** </br>
  👉 If you had another container (`mysql-container-1`) using the same volume, you might have done:
 ```
 docker exec -it mysql-container-1 bash
 mysql -u root -p
 ```
+</br>
  👉 Inside the MySQL prompt:
 ```
 CREATE DATABASE welcome_to_docker_volume;
@@ -66,12 +66,13 @@ sudo ./start-mysql-vol.sh
 ```
 </br>
 
-**7. Verify Persistence**
+**7. Verify Persistence** </br>
  👉 Connect again:
 ```
 docker exec -it mysql-container-2 bash
 mysql -u root -p
 ```
+</br>
  👉 Then:
 ```
 SHOW DATABASES;
