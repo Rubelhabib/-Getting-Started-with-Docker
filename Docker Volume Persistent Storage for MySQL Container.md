@@ -30,9 +30,11 @@ docker run --name mysql-container-2 \
 ```
 </br>
  👉 Then make it executable:
+ 
 ```
 chmod +x start-mysql-vol.sh
 ```
+
 </br>
 
 3. Run the MySQL Container
@@ -42,13 +44,13 @@ sudo ./start-mysql-vol.sh
 </br>
 
 **4. (Optional) Create a Test Database** </br>
- 👉 If you had another container (`mysql-container-1`) using the same volume, you might have done:
+   👉 If you had another container (`mysql-container-1`) using the same volume, you might have done:
 ```
 docker exec -it mysql-container-1 bash
 mysql -u root -p
 ```
-</br>
- 👉 Inside the MySQL prompt:
+ 👉 Inside the MySQL prompt: </br>
+
 ```
 CREATE DATABASE welcome_to_docker_volume;
 ```
@@ -67,17 +69,20 @@ sudo ./start-mysql-vol.sh
 </br>
 
 **7. Verify Persistence** </br>
- 👉 Connect again:
+   👉 Connect again:
 ```
 docker exec -it mysql-container-2 bash
 mysql -u root -p
 ```
 </br>
- 👉 Then:
+  👉 Then:
+ 
 ```
 SHOW DATABASES;
 ```
 ✅ You should see welcome_to_docker_volume — confirming that the data persisted even after container deletion.
+
+</br>
 
 **📁 Summary**
 
