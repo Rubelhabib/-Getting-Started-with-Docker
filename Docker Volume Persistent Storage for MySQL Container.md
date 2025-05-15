@@ -20,7 +20,8 @@ docker volume create mysql-vol
 </br>
 
 **2. Create a Shell Script to Run MySQL with Volume** </br>
- 👉 Create a file called `start-mysql-vol.sh` with the following content:
+
+  👉 Create a file called `start-mysql-vol.sh` with the following content:
 ```
 #!/bin/bash
 docker run --name mysql-container-2 \
@@ -44,6 +45,7 @@ sudo ./start-mysql-vol.sh
 </br>
 
 **4. (Optional) Create a Test Database** </br>
+
    👉 If you had another container (`mysql-container-1`) using the same volume, you might have done:
 ```
 docker exec -it mysql-container-1 bash
@@ -69,6 +71,7 @@ sudo ./start-mysql-vol.sh
 </br>
 
 **7. Verify Persistence** </br>
+
    👉 Connect again:
 ```
 docker exec -it mysql-container-2 bash
