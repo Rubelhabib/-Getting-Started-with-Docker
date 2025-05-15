@@ -134,4 +134,3 @@ This is a complete Docker guide covering installation, usage, networking, volume
 
 You can use this as a starter reference to run any small app easily with Docker.
 
-📄
