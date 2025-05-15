@@ -13,6 +13,8 @@ docker network create myNetwork
 
 ---
 
+![Create Network](Docker-Bridge-Networking-images/Docker-network-create1.png)
+
 ## ✩ Step 2: Run Two Nginx Containers in the Same Network
 
 ```bash
@@ -21,6 +23,8 @@ docker run -d --name=container2 --network=myNetwork nginx
 ```
 
 ---
+
+![Create container](Docker-Bridge-Networking-images/docker-container-create2.png)
 
 ## ✩ Step 3: Verify Running Containers
 
@@ -53,6 +57,8 @@ cat index.html
 
 ---
 
+![index.html file](Docker-Bridge-Networking-images/Docker3.png)
+
 ## ✩ Step 6: Test Communication from `container1`
 
 ```bash
@@ -79,6 +85,10 @@ curl http://container1
 ```
 
 ---
+
+  ✩ OutPut
+
+![OutPut](Docker-Bridge-Networking-images/Output.png)
 
 ## ✨ Summary
 
