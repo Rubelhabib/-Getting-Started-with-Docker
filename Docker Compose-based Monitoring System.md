@@ -280,7 +280,8 @@ scrape_configs:
 ![Docker load file](monitoring-images/load-down.png)
 
 ---
-▶️ Docker load file
+
+▶️ Docker Load File
 
 ![Docker load file](monitoring-images/load.png)
 
