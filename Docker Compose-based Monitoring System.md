@@ -42,7 +42,9 @@ Prometheus configuration includes:
 
 ## 🚀 Getting Started
 
-### 1. 🐳 docker-compose.yaml Explanation (line-by-line in English)
+### 1. 🐳 docker-compose.yaml Explanation
+
+![Vim compose.yaml](monitoring-images/vim-docker-compose.yaml.png)
 
 #### 🔗 Create Network:
 
@@ -227,9 +229,16 @@ volumes:
 
 ▶️ Maps host port 80 to container's 3000 (default Grafana port).
 
+</br>
+
+---
+![Compose.yaml file](monitoring-images/compose.yamlfile.png)
+
 ---
 
 ## 📄 prometheus.yml Explanation
+
+![vim prometheus.yaml file](monitoring-images/vim-prometheus.yamlfile.png)
 
 ```yaml
 global:
@@ -256,6 +265,24 @@ scrape_configs:
 ```
 
 ▶️ Prometheus collects metrics from node-exporter on port 9100.
+
+</br>
+
+![Prometheus file](monitoring-images/prometheus.yaml-file.png)
+
+---
+▶️ Docker up file
+
+![docker up file](monitoring-images/docker-compose-up.png)
+---
+▶️ Docker Monitoring
+
+![Docker load file](monitoring-images/load-down.png)
+
+---
+▶️ Docker load file
+
+![Docker load file](monitoring-images/load.png)
 
 ---
 
