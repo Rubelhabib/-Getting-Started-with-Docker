@@ -236,7 +236,7 @@ volumes:
 
 ---
 
-## 📄 prometheus.yml Explanation
+## 📄 prometheus.yaml Explanation
 
 ![vim prometheus.yaml file](monitoring-images/vim-prometheus.yamlfile.png)
 
