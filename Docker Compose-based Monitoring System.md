@@ -274,7 +274,15 @@ scrape_configs:
 ▶️ Docker up file
 
 ![docker up file](monitoring-images/docker-compose-up.png)
+
 ---
+
+▶️ Cheack Docker Compose PS File
+
+![Docke compose ps](monitoring-images/composefile-4.png)
+
+---
+
 ▶️ Docker Monitoring
 
 ![Docker load file](monitoring-images/load-down.png)
