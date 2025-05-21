@@ -13,8 +13,6 @@ graph TD;
     secondNetwork --> db;
 ```
 
----
-
 
 🛠️ Setup Commands
 
@@ -25,9 +23,10 @@ docker network create firstNetwork
 docker network create secondNetwork
 ```
 
----
-
 ![Network Create](Image/docker-network-create.png)
+
+
+---
 
 2. Launch Containers
 
