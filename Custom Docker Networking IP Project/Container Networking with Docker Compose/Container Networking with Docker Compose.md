@@ -31,7 +31,7 @@ This project demonstrates how to:
 ![Vim Compose yaml File](Image/docker-compose.yaml-file.png)
 
 
-** Select ip in yaml file **
+**-Select ip in yaml file**
 
 ![Vim Compose yaml File](Image/Select-IP-with-yaml-file.png)
 
@@ -61,12 +61,12 @@ This project demonstrates how to:
 
 ![Docker Compose Ps](Image/docker-inspact.png)    
 
-** - Check IP**
+**- Check IP**
 
 ![Out Put](Image/docker-ip-change.png)
  
 
-** Select ip in yaml file **
+**-Select ip in yaml file**
 
 ![Select IP](Image/Output.png)
 
