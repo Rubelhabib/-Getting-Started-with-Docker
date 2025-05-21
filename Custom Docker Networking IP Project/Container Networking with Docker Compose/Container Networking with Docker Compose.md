@@ -25,23 +25,44 @@ This project demonstrates how to:
 
 1. **Clone or download** the `docker-compose.yaml` file.
 
-2. **Run the following command** to start the container:
+![Vim Compose File](Image/vim-composefile-1.png)
+
+
+![Vim Compose yaml File](Image/docker-compose.yaml-file.png)
+
+---
+
+3. **Run the following command** to start the container:
 
     ```sh
     docker compose up -d
     ```
+![Docker Compose Up  File](Image/docker-upfile2.png)
 
-3. **Check the running containers**:
+---
+
+4. **Check the running containers**:
 
     ```sh
     docker compose ps
     ```
 
-4. **Inspect the container’s network**:
+5. **Inspect the container’s network**:
 
     ```sh
     docker inspect <container_name>
     ```
+
+![Docker Compose Ps](Image/docker-inspact.png)    
+
+** - Check IP**
+
+![Out Put](Image/docker-ip-change.png)
+ 
+
+** - Select Ip in YAML File **
+
+![Select IP](Image/Output.png)
 
 ---
 
