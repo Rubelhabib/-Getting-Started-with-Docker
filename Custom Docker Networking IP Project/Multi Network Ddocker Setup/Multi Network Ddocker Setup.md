@@ -14,6 +14,8 @@ graph TD;
 ```
 
 
+---
+
 🛠️ Setup Commands
 
 1. Create Docker Networks
@@ -27,6 +29,7 @@ docker network create secondNetwork
 
 
 ---
+
 
 2. Launch Containers
 
