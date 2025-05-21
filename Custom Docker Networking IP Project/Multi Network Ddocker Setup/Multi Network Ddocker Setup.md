@@ -25,6 +25,8 @@ docker network create secondNetwork
 ```
 ---
 
+![Network Create](Image/docker-network-create.png)
+
 2. Launch Containers
 
 ```
@@ -37,6 +39,8 @@ docker run -d --name=db --network=secondNetwork nginx
 
 ```
 
+![Docker Run](Image/docker-run2.png)
+
 ---
 
 3. Connect backend2 to secondNetwork
@@ -44,6 +48,7 @@ docker run -d --name=db --network=secondNetwork nginx
 ```
 docker network connect secondNetwork backend2
 ```
+![Docker Connect](Image/docker-network-connect3.png)
 
 ---
 
@@ -69,6 +74,8 @@ ping db        # Should fail (different networks)
 
 ```
 
+![Ping Backend2](Image/db-backend2-ping.png)
+
 ---
 
 From backend2:
@@ -80,6 +87,7 @@ ping backend1  # Should succeed (same network)
 ping db        # Should succeed (connected to both networks)
 
 ```
+![Ping Backend 2](Image/Backend2.png)
 
 ---
 
@@ -92,6 +100,7 @@ ping backend2  # Should succeed
 ping backend1  # Should fail
 
 ```
+![Ping DB](Image/ping-db.png)
 
 ---
 
