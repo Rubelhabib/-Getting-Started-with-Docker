@@ -13,6 +13,8 @@ cd /etc/docker/
 pwd
 ```
 
+![Docker etc file](Image/docker-etc-file1.png)
+
 ---
 
 ## ✏️ Step 2: Create or Edit the `daemon.json` File
@@ -30,6 +32,12 @@ sudo vim daemon.json
   "bip": "10.10.10.1/24"
 }
 ```
+
+![Vim deamon.json file](Image/vim-daemon2.png)
+
+
+![Vim deamon.json file](Image/vim-daemon.json-file3.png)
+
 
 🎯 Explanation:  
 This `bip` (Bridge IP) setting assigns a custom IP subnet (`10.10.10.1` to `10.10.10.254`) for Docker’s default bridge network (`docker0`).
@@ -54,6 +62,8 @@ sudo systemctl restart docker
 sudo systemctl status docker
 ```
 
+![Docker Status](Image/docker-restart4.png)
+
 ---
 
 ## 🔍 Step 5: Verify IP Using `ifconfig`
@@ -63,6 +73,8 @@ sudo systemctl status docker
 ```bash
 ifconfig
 ```
+
+![IfConfig](Image/ip-change5.png)
 
   ⏩ The `docker0` interface should now display the IP: `10.10.10.1`
 
