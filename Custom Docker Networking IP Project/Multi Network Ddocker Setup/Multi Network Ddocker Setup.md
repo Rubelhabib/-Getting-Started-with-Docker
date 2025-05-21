@@ -5,14 +5,14 @@ This guide demonstrates creating multiple Docker networks, attaching containers,
 ## 🌐 Network Topology Overview
 ---
 
-mermaid
+```mermaid
 graph TD;
     firstNetwork[firstNetwork] --> backend1;
     firstNetwork --> backend2;
     secondNetwork[secondNetwork] --> backend2;
     secondNetwork --> db;
 
-
+```
 
 ---
 
