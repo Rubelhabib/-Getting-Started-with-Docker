@@ -1,4 +1,4 @@
-##Docker Custom Network with Static IP
+## Docker Custom Network with Static IP
 A demo of Docker Compose with custom bridge networking
 Overview
 This project demonstrates how to:
