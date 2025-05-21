@@ -30,6 +30,12 @@ This project demonstrates how to:
 
 ![Vim Compose yaml File](Image/docker-compose.yaml-file.png)
 
+
+** Select ip in yaml file **
+
+![Vim Compose yaml File](Image/Select-IP-with-yaml-file.png)
+
+
 ---
 
 3. **Run the following command** to start the container:
@@ -60,7 +66,7 @@ This project demonstrates how to:
 ![Out Put](Image/docker-ip-change.png)
  
 
-** - Select Ip in YAML File **
+** Select ip in yaml file **
 
 ![Select IP](Image/Output.png)
 
