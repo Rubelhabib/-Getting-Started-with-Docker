@@ -15,6 +15,7 @@ graph TD;
 
 ---
 
+
 🛠️ Setup Commands
 
 1. Create Docker Networks
@@ -23,6 +24,7 @@ graph TD;
 docker network create firstNetwork
 docker network create secondNetwork
 ```
+
 ---
 
 ![Network Create](Image/docker-network-create.png)
@@ -119,6 +121,7 @@ ping backend1  # Should fail
 
   ⏺ Docker provides automatic DNS resolution for container names within the same network
 
+---
 
 🧹 Cleanup Commands
 
@@ -128,13 +131,4 @@ docker rm backend1 backend2 db
 docker network rm firstNetwork secondNetwork
 ```
 
-
-
-
-
-
-
-
-
-
-   
+---
