@@ -1,20 +1,3 @@
-mysql-bindmount-demo/
-├── mysql-data/                   # Local directory for MySQL data (created automatically)
-├── start-mysql.sh                # Script to run MySQL container with bind mount
-
-# Contents of start-mysql.sh
-#!/bin/bash
-
-docker run --name mysql-container1 \
-  -v $(realpath mysql-data):/var/lib/mysql \
-  -e MYSQL_ROOT_PASSWORD=mypassword \
-  -d mysql:latest
-
-# Make script executable:
-# chmod +x start-mysql.sh
-
-
-# Contents of README.md
 # MySQL Bind Mount Demo with Docker
 
 This project demonstrates how to run a MySQL container using Docker with a bind mount to persist data.
@@ -29,7 +12,6 @@ This project demonstrates how to run a MySQL container using Docker with a bind 
 mysql-bindmount-demo/
 ├── mysql-data/             # Local data directory (bind-mounted)
 ├── start-mysql.sh          # Shell script to run MySQL container
-
 ```
 
 ## ▶️ How to Run
