@@ -71,9 +71,9 @@ services:
 | View network list                   | `docker network ls`                                | View active networks         |
 | View logs of a specific service     | `docker-compose logs service_name`                 | Logs for a specific service  |
 | View container resource usage       | `docker stats`                                     | CPU/RAM usage                |
-
-|                                     | `docker rm -f $(docker ps -aq)`                    | Running COntainer DELETE     | </br>
-|                                     | `docker system prune -a`                            | All file DELETE             |
+|                                     |                                                    |                              |
+|                                     | `docker rm -f $(docker ps -aq)`                    | Running COntainer DELETE     | 
+|                                     | `docker system prune -a`                           | All file DELETE              |
 
 ---
 
