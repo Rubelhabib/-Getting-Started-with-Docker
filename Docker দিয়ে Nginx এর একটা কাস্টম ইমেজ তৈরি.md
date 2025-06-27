@@ -1,4 +1,4 @@
-###  __ধাপ ১: vim Dockerfile__
+###  Step 1: Create a Dockerfile with vim
 
  ```
 FROM nginx
@@ -6,15 +6,16 @@ COPY index.html /usr/share/nginx/html
 ```
 ![Picture](images/Dockervimfile.png)
 
-ব্যাখ্যা: </br>
- - এখানে একটি Dockerfile তৈরি করা হয়েছে, যেখানে:
+Explanation:
 
-  - `FROM nginx` — এটি বলে দিচ্ছে যে nginx অফিসিয়াল ইমেজটি বেস হিসেবে ব্যবহার করা হবে।
-  `COPY index.html /usr/share/nginx/html` — এই কমান্ডটি index.html ফাইলটিকে Nginx এর ডিফল্ট
-   ওয়েবরুট `/usr/share/nginx/html`-এ কপি করে দিচ্ছে। 
-  এতে ব্রাউজারে গিয়ে `Nginx` এর ডিফল্ট পেজ না দেখে তোমার দেওয়া `index.html` দেখা যাবে।
+A Dockerfile is created here with the following instructions:
 
-### __🔹 ধাপ ২: vim index.html__
+FROM nginx — This specifies that the base image for this container will be the official nginx image.
+
+COPY index.html /usr/share/nginx/html — This command copies your custom index.html file into Nginx’s default web root directory.
+As a result, when you open the container in a browser, you will see your index.html content instead of the default Nginx welcome page.
+
+### __🔹 Step 2: Create index.html with vim
 
 ```
 vim index.html
@@ -22,39 +23,40 @@ vim index.html
 ![Index.html](images/index.html.png)
 
 
-ব্যাখ্যা: </br>
- - এটি হলো HTML ফাইল যা ব্রাউজারে প্রদর্শিত হবে যখন কেউ তোমার কনটেইনারের সার্ভারে (মানে: `localhost:80`) যাবে।
+Explanation:
+
+This is the HTML file that will be displayed in the browser when someone visits your container’s server (i.e., localhost:80).
 
 ![Picture](/images/pic1.png)
 
-### __🔹 ধাপ ৩: Docker ইমেজ তৈরি__
-
+### __🔹 Step 3: Build the Docker Image
 ```
 docker build . -t class02-nginx
 ```
-ব্যাখ্যা: </br>
- - এটি বর্তমান ডিরেক্টরিতে থাকা Dockerfile অনুসারে একটি ইমেজ তৈরি করে যার নাম class02-nginx।
+Explanation:
 
-### __🔹 ধাপ ৪: কনটেইনার রান করানো__
+This command builds a Docker image from the current directory using the Dockerfile, and names the image class02-nginx.
+
+### 🔹 Step 4: Run the Container
 
 ```
 docker run -d --name=class2-nginx-container -p 80:80 class2-nginx
 ```
 
-ব্যাখ্যা: </br>
-   - এটি `class2-nginx` ইমেজ থেকে একটি কনটেইনার চালু করে:
+Explanation:
 
-   `-d মানে detach mode`, কনটেইনার ব্যাকগ্রাউন্ডে চলে।
+This runs a new container from the class2-nginx image:
 
-   `--name=class2-nginx-container` কনটেইনারের নাম নির্ধারণ করে।
+-d runs the container in detached (background) mode.
 
-   `-p 80:80` মানে হোস্টের 80 পোর্টটি কনটেইনারের 80 পোর্টের সাথে ম্যাপ করে, অর্থাৎ তুমি ব্রাউজারে `localhost বা server-ip এ গেলেই তোমার index.html` দেখা যাবে।
+--name=class2-nginx-container assigns a custom name to the container.
+
+-p 80:80 maps port 80 of your host to port 80 of the container, so when you visit localhost or your server’s IP, you will see the content of your index.html.
 
 ![Picture](images/output.png)
 
-### ✅ ফলাফল:
-
-  - Docker দিয়ে একটি কাস্টম Nginx ওয়েব সার্ভার তৈরি করা হয়েছে, যেখানে `"Hello from Docker"` মেসেজটি ব্রাউজারে দেখা যাবে।    
+### ✅ Result:
+A custom Nginx web server has been successfully created using Docker, and the message "Hello from Docker" will be displayed in the browser.
 
 
 
